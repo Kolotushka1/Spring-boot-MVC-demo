@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Form - Input Form</title>
+</head>
+<body>
+    <form th:action="@{/processForm}" method="GET">
+        <input type="text" name="studentName"
+            placeholder="What's your name? V1">
+        <input type="submit"/>
+    </form>
+    <br><br>
+    <form th:action="@{/processFormVersionTwo}" method="GET">
+        <input type="text" name="studentName"
+               placeholder="What's your name? V2">
+        <input type="submit"/>
+    </form>
+    <br><br>
+    <form th:action="@{/processFormVersionThree}" method="POST">
+        <input type="text" name="studentName"
+               placeholder="What's your name? V3">
+        <input type="submit"/>
+    </form>
+</body>
+</html>
